@@ -1,7 +1,7 @@
 # NavigationApp
 ------------------
 
-Џример использованииЯ передачи данных между фрагментами с использованием Android NavigationApp
+РџСЂРёРјРµСЂ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРёСЏ РїРµСЂРµРґР°С‡Рё РґР°РЅРЅС‹С… РјРµР¶РґСѓ С„СЂР°РіРјРµРЅС‚Р°РјРё СЃ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµРј Android NavigationApp
 Equivalent of startActivityForResult() with Android Architecture Navigation
 Pass data back to previous fragment using Android Navigation
 How to get a result from fragment using Navigation Architecture Component?
