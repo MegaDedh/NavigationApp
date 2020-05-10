@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/second_fragment_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SecondFragment"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <TextView
+            android:id="@+id/second_text_view_1"
+            android:text="Value from FirstFragment (arg):"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@id/second_fragment_tv" />
+
+
+
+        <EditText
+            android:id="@+id/arg_second_value"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="0"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:background="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/second_text_view_1" />
+
+        <Button
+            android:id="@+id/second_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="+"
+            android:layout_marginHorizontal="10dp"
+            app:layout_constraintStart_toEndOf="@id/arg_second_value"
+            app:layout_constraintTop_toTopOf="@id/arg_second_value" />
+
+        <Button
+            android:id="@+id/second_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="-"
+            android:layout_marginHorizontal="10dp"
+            app:layout_constraintEnd_toStartOf="@id/arg_second_value"
+            app:layout_constraintTop_toTopOf="@id/arg_second_value" />
+
+        <Button
+            android:id="@+id/send_value_to_first_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&lt;--- Send new value to FirstFragment"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/arg_second_value" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
