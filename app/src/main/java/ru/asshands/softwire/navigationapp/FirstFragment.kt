@@ -28,13 +28,16 @@ class FirstFragment : Fragment() {
 
 
         // Passing data between Destinations (Available in Navigation 2.3.0-alpha02 and higher)
-        val navController = findNavController();
+        val navController = findNavController()
         navController
             .currentBackStackEntry
             ?.savedStateHandle
             ?.getLiveData<Int>("KEY_SECOND_VALUE")
             ?.observe(viewLifecycleOwner, Observer {
                 arg_second_value.text = it.toString()
+//                navController
+//                    .currentBackStackEntry
+//                    ?.savedStateHandle?.remove<Int>("KEY_SECOND_VALUE")
             })
 
 
